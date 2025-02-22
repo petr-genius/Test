@@ -7,105 +7,69 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Шапка сайта -->
     <header>
         <div class="container">
             <h1>Продажа номеров</h1>
             <nav>
                 <ul>
-                    <li><a href="#services">Сервисы</a></li>
-                    <li><a href="#countries">Страны</a></li>
-                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#numbers">Номера</a></li>
+                    <li><a href="#activation">Активация</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h2>Доступные номера для различных сервисов</h2>
-            <p>Выберите страну и сервис для получения номера</p>
-            <a href="#services" class="btn">Начать</a>
-        </div>
-    </section>
-
-    <section id="services" class="animated">
-        <div class="container">
-            <h2>Сервисы</h2>
-            <div class="services-grid">
-                <div class="service">
-                    <h3>Telegram</h3>
-                    <p>Номера для регистрации в Telegram</p>
-                    <div class="numbers">
-                        <p>+7 (XXX) XXX-XX-XX</p>
-                        <p>+1 (XXX) XXX-XX-XX</p>
-                        <p>+49 (XXX) XXX-XX-XX</p>
-                    </div>
+    <!-- Основной контент -->
+    <main>
+        <!-- Секция с номерами -->
+        <section id="numbers" class="numbers-list">
+            <div class="container">
+                <h2>Список номеров</h2>
+                <div class="number-card">
+                    <h3>Страна: США</h3>
+                    <p>Сервис: WhatsApp</p>
+                    <p>Цена: $5</p>
+                    <button class="buy-button">Купить</button>
                 </div>
-                <div class="service">
-                    <h3>WhatsApp</h3>
-                    <p>Номера для регистрации в WhatsApp</p>
-                    <div class="numbers">
-                        <p>+7 (XXX) XXX-XX-XX</p>
-                        <p>+1 (XXX) XXX-XX-XX</p>
-                        <p>+49 (XXX) XXX-XX-XX</p>
-                    </div>
+                <div class="number-card">
+                    <h3>Страна: Россия</h3>
+                    <p>Сервис: Telegram</p>
+                    <p>Цена: $3</p>
+                    <button class="buy-button">Купить</button>
                 </div>
-                <div class="service">
-                    <h3>Google</h3>
-                    <p>Номера для регистрации в Google</p>
-                    <div class="numbers">
-                        <p>+7 (XXX) XXX-XX-XX</p>
-                        <p>+1 (XXX) XXX-XX-XX</p>
-                        <p>+49 (XXX) XXX-XX-XX</p>
-                    </div>
-                </div>
+                <!-- Добавьте больше номеров по аналогии -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="countries" class="animated">
-        <div class="container">
-            <h2>Страны</h2>
-            <div class="countries-grid">
-                <div class="country">
-                    <h3>Россия</h3>
-                    <p>Номера из России</p>
-                    <div class="numbers">
-                        <p>+7 (XXX) XXX-XX-XX</p>
-                        <p>+7 (XXX) XXX-XX-XX</p>
-                        <p>+7 (XXX) XXX-XX-XX</p>
-                    </div>
-                </div>
-                <div class="country">
-                    <h3>США</h3>
-                    <p>Номера из США</p>
-                    <div class="numbers">
-                        <p>+1 (XXX) XXX-XX-XX</p>
-                        <p>+1 (XXX) XXX-XX-XX</p>
-                        <p>+1 (XXX) XXX-XX-XX</p>
-                    </div>
-                </div>
-                <div class="country">
-                    <h3>Германия</h3>
-                    <p>Номера из Германии</p>
-                    <div class="numbers">
-                        <p>+49 (XXX) XXX-XX-XX</p>
-                        <p>+49 (XXX) XXX-XX-XX</p>
-                        <p>+49 (XXX) XXX-XX-XX</p>
-                    </div>
-                </div>
+        <!-- Секция активации -->
+        <section id="activation" class="activation">
+            <div class="container">
+                <h2>Инструкция по активации</h2>
+                <p>Для активации номера, пожалуйста, свяжитесь с нашим ботом в Telegram.</p>
+                <a href="https://t.me/your_bot" class="bot-link">Перейти к боту</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer id="contact">
+    <!-- Подвал сайта -->
+    <footer>
         <div class="container">
-            <h2>Контакты</h2>
-            <p>Свяжитесь с нами для получения дополнительной информации</p>
-            <p>Email: info@example.com</p>
+            <p>&copy; 2025 Продажа номеров. Все права защищены.</p>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <!-- Скрипты -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const buyButtons = document.querySelectorAll(".buy-button");
+
+            buyButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    alert("Для покупки номера свяжитесь с нашим ботом.");
+                });
+            });
+        });
+    </script>
 </body>
-  </html>
+                    </html>
